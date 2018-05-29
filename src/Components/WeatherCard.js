@@ -25,13 +25,10 @@ class WeatherCard extends Component {
           <span className="btn btn-default pull-right" onClick={this.removeLocation}>
             <i className="fa fa-times-circle-o fa-2x pull-right"/>
           </span>
-          <div className="row">
-            <div className="col-xs-12">
-              <h1 className="mg-left">{data.location}</h1>
-              <h5 className="mg-left">{data.datetime}</h5>
-              <h3 className="mg-left">{data.conditions}</h3>
-            </div>
-          </div>
+          <Location
+              location={data.location}
+              datetime={data.datetime}
+              conditions={data.conditions} />
           <div className="row">
             <div className='icontemp'>            
               <div className="col-xs-6 flex-block">
