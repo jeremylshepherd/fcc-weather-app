@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Day from './Day';
 import Location from './Location';
 import SkyCon from './SkyCon';
+import TimeTemp from './TimeTemp';
 
 class WeatherCard extends Component {
   constructor(props) {
@@ -30,16 +31,10 @@ class WeatherCard extends Component {
               datetime={data.datetime}
               conditions={data.conditions} />
           <div className="row">
-            <div className='icontemp'>            
-              <div className="col-xs-6 flex-block">
-                <div className={`flex-row`}>
-                  <SkyCon color="#222" icon={data.icon} />
-                  <div className="col-xs-6">
-                    <h2 className="temp">{`${data.temp}\u2109`}</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <TimeTemp
+              color="#222" 
+              icon={data.icon}
+              temp={data.temp}/>
             <div id='blocks' className="col-xs-6">
               <div className="block infoBlock flex-block">
                 <div className="flex-row">
