@@ -2,7 +2,7 @@ import React from 'react';
 
 const WindRainSun = props => {
     return (
-        <div id='blocks' className="col-xs-6">
+        <div id={`blocks${props.zip}`} className="col-xs-6">
             <div className="block infoBlock flex-block">
                 <div className="flex-row">
                     <h4>Humidity:</h4><h4>{`${props.humidity}%`}</h4>

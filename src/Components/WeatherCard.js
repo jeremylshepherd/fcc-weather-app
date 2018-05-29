@@ -4,6 +4,7 @@ import Day from './Day';
 import Location from './Location';
 import SkyCon from './SkyCon';
 import TimeTemp from './TimeTemp';
+import WindRainSun from './WindRainSun';
 
 class WeatherCard extends Component {
   constructor(props) {
@@ -35,17 +36,13 @@ class WeatherCard extends Component {
               color="#222" 
               icon={data.icon}
               temp={data.temp}/>
-            <div id='blocks' className="col-xs-6">
-              <div className="block infoBlock flex-block">
-                <div className="flex-row">
-                  <h4>Humidity:</h4><h4>{`${data.humidity}%`}</h4>
-                </div>
-                <div className="flex-row"><h4>Wind:</h4><h4>{data.windSpeed}</h4></div>
-                <div className="flex-row"><h4>Precipitation:</h4><h4>{`${data.precip}%`}</h4></div>
-                <div className="flex-row"><h4>Sunrise:</h4><h4>{data.sunrise}</h4></div>
-                <div className="flex-row"><h4>Sunset:</h4><h4>{data.sunset}</h4></div>
-              </div>
-            </div>
+            <WindRainSun
+                zip={zip}
+                humidity={data.humidity}
+                windSpeed={data.windSpeed}
+                precip={data.precip}
+                sunrise={data.sunrise}
+                sunset={data.sunset}/>
           </div>
           <div className="row">
             <div className='col-xs-12'>
