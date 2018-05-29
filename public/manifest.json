@@ -1,0 +1,21 @@
+{
+  "name": "freeCodeCamp Weather App",
+  "short_name": "fCC Weather",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "rgba(255,255,255, 0.7)",
+  "icons": [
+    {
+      "src": "fcc_weather_icon.png",
+      "sizes": "855x899",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "background_color": "rgba(255,255,255, 0.7)"
+}
