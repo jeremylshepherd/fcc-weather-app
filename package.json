@@ -16,6 +16,7 @@
     "react-skycons": "^0.7.0",
     "skycons": "^1.0.0"
   },
+  "homepage": "https://jeremylshepherd.github.io/fcc-weather-app"
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
     "prettier --write",
