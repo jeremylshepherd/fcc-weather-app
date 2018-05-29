@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DayContainer = props => {
+const DaysContainer = props => {
     return (
         <div className="row">
             <div className='col-xs-12'>
@@ -16,4 +16,4 @@ const DayContainer = props => {
     );
 };
 
-export default DayContainer;
+export default DaysContainer;
