@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import DarkSky from './DarkSky';
 import Day from './Day';
+import DaysContainer from './DaysContainer';
 import Location from './Location';
 import SkyCon from './SkyCon';
 import TimeTemp from './TimeTemp';
@@ -45,17 +46,7 @@ class WeatherCard extends Component {
                 sunrise={data.sunrise}
                 sunset={data.sunset}/>
           </div>
-          <div className="row">
-            <div className='col-xs-12'>
-              <div className='col-xs-12'>
-                <h3>7 Day forecast:</h3>
-                <hr className="hr"/>
-              </div>
-              <div id="days" className="col-xs-12 flex">
-                {forecast}
-              </div>
-            </div>
-          </div>
+          <DaysContainer forecast={forecast} />
         </div>
         <DarkSky />
       </div>
