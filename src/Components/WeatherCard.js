@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import DarkSky from './DarkSky';
 import Day from './Day';
 import Location from './Location';
 import SkyCon from './SkyCon';
@@ -56,9 +57,7 @@ class WeatherCard extends Component {
             </div>
           </div>
         </div>
-        <div className="flex-row jc-fe attribution">
-          <h6><i className="fa fa-bolt"></i> Powered by DarkSky</h6>
-        </div>
+        <DarkSky />
       </div>
     );
   }
