@@ -1,6 +1,6 @@
-## freeCodeCamp Weather App
+<img src='public/fcc_weather_icon.png' alt='Weather App Logo' width='80' height='89'/><h2>freeCodeCamp Weather App</h2>
 
-<img src='public/fcc_weather_icon.png' alt='Weather App Logo' width='80' height='89'/>
+
 
 ## Basics
 
