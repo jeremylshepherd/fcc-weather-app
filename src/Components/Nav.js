@@ -7,7 +7,7 @@ const Nav = props => {
                 <div className="flex-nav">
                     <span className="navbar-brand">
                         <i className="fa fa-free-code-camp" />
-                        <span> Weather App</span>
+                        <span> Weather</span>
                     </span>
                     <span
                         className="btn btn-default plus"
