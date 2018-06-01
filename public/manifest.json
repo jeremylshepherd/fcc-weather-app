@@ -2,7 +2,7 @@
   "name": "freeCodeCamp Weather App",
   "short_name": "fCC Weather",
   "lang": "en-US",
-  "start_url": "/fcc-weather-app",
+  "start_url": "/fcc-weather-app/index.html",
   "display": "standalone",
   "theme_color": "rgba(255,255,255, 0.7)",
   "icons": [

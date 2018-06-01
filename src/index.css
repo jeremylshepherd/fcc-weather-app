@@ -1,146 +1,143 @@
 body {
-  color: #222;
+    color: #222;
 }
 
 .flex-nav {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
 .btn-default {
-  background-color: rgba(0, 0, 0, 0) !important;
-  border: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
 }
 
 .btn-default:hover {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .navbar-default {
-  background-color: rgba(255, 255, 255, 0.75) !important;
-  border-radius: 0;
-  min-width: 105%;
-  margin-left: -2px;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    border-radius: 0;
 }
 .navbar-default .navbar-brand {
-  color: #222;
+    color: #222;
 }
 .navbar-default .plus {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .weatherBoard {
-  width: 95%;
-  max-width: 520px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  padding: 10px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+    width: 95%;
+    max-width: 520px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .weatherBoard .btn-default {
-  padding-left: 1px;
-  padding-right: 10px;
+    padding-left: 1px;
+    padding-right: 10px;
 }
 
 .mg-left {
-  margin-left: 15px;
+    margin-left: 15px;
 }
 
 .flex-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .jc-fe {
-  justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .as-end {
-  align-self: flex-end;
+    align-self: flex-end;
 }
 
 .icontemp canvas {
-  height: 6rem;
-  margin-top: 5px;
-  margin-left: -15px;
+    height: 6rem;
+    margin-top: 5px;
+    margin-left: -15px;
 }
 
 #days canvas {
-  height: 3rem;
-  margin-left: -15px;
+    height: 3rem;
+    margin-left: -15px;
 }
 
 .hr {
-  border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .temp {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 .block {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 .block h4 {
-  margin: 3px 0;
+    margin: 3px 0;
 }
 
 .attribution canvas {
-  margin-top: 0;
-  height: 1.75rem;
-  color: rgba(255, 255, 255, 0.75);
+    margin-top: 0;
+    height: 1.75rem;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 @media screen and (max-width: 540px) {
-  h1 {
-    font-size: 4rem;
-  }
+    h1 {
+        font-size: 4rem;
+    }
 
-  .icontemp canvas {
-    height: 5rem;
-  }
+    .icontemp canvas {
+        height: 5rem;
+    }
 
-  .temp {
-    font-size: 4rem;
-  }
+    .temp {
+        font-size: 4rem;
+    }
 }
 @media screen and (max-width: 440px) {
-  .temp {
-    font-size: 3rem;
-  }
+    .temp {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 375px) {
-  .block h4 {
-    font-size: 1.35rem;
-  }
+    .block h4 {
+        font-size: 1.35rem;
+    }
 }
 @media screen and (max-width: 320px) {
-  h1 {
-    font-size: 3rem;
-  }
+    h1 {
+        font-size: 3rem;
+    }
 
-  .icontemp canvas {
-    height: 4rem;
-  }
+    .icontemp canvas {
+        height: 4rem;
+    }
 }

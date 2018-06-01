@@ -31,7 +31,6 @@ class App extends Component {
     }
 
     detectOrientationChange = () => {
-        console.log(window.innerWidth, window.innerHeight);
         if (window.innerWidth < window.innerHeight) {
             this.setState({ orientation: 'portrait' });
             this.getBackGround();
