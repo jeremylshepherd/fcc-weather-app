@@ -6,7 +6,7 @@ export default class RemoveButton extends React.Component {
     };
     render() {
         return (
-            <span className="btn btn-default pull-right" onClick={this.removeLocation}>
+            <span className="col-xs-1 btn btn-default pull-right" onClick={this.removeLocation}>
                 <i className="fa fa-times-circle-o fa-2x pull-right" />
             </span>
         );

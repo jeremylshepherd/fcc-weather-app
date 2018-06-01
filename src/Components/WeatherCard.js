@@ -16,12 +16,14 @@ class WeatherCard extends React.Component {
         return (
             <div className="container weatherBoard" id={zip} key={zip}>
                 <div className="user-weather">
-                    <RemoveButton zip={zip} removeLocation={this.props.removeLocation} />
-                    <Location
-                        location={data.location}
-                        datetime={data.datetime}
-                        conditions={data.conditions}
-                    />
+                    <div className="row">
+                        <Location
+                            location={data.location}
+                            datetime={data.datetime}
+                            conditions={data.conditions}
+                        />
+                        <RemoveButton zip={zip} removeLocation={this.props.removeLocation} />
+                    </div>
                     <div className="row">
                         <TimeTemp color="#222" icon={data.icon} temp={data.temp} />
                         <WindRainSun
