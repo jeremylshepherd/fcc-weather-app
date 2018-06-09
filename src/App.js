@@ -31,12 +31,17 @@ class App extends Component {
     }
 
     detectOrientationChange = () => {
-        if (window.innerWidth < window.innerHeight) {
+        if (window.innerWidth < window.innerHeight && this.state.orientation !== 'portrait') {
             this.setState({ orientation: 'portrait' });
             this.getBackGround();
-        } else {
+        } else if (
+            window.innerWidth > window.innerHeight &&
+            this.state.orientation !== 'landscape'
+        ) {
             this.setState({ orientation: 'landscape' });
             this.getBackGround();
+        } else {
+            console.log('no change needed');
         }
     };
 
